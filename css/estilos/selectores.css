@@ -1,0 +1,22 @@
+/* Comentarios */
+
+/* Selectores de etiqueta */
+
+body{
+    margin: 0;
+}
+
+/* Selectores de atributo id */
+
+#seccion_uno{
+    background-color: coral;
+    min-height: 100vh;
+}
+
+/* Selectores de atributo class */
+
+.seccion_dos{
+    background-color: crimson;
+    min-height: 100vh;
+}
+
