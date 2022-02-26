@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios web</title>
+</head>
+
+<body>
+    <form action="../PHP/accion.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Formulario:</legend>
+            <!--Etiqueta label-->
+            <label for="nombre">Nombre:</label><br>
+            <!--Input tipo texto-->
+            <input type="text" id="nombre" name="nombre" value="John">
+            <br>
+            <label for="apellidos">Apellidos:</label>
+            <br>
+            <input type="text" id="apellidos" name="apellidos" value="Doe">
+            <br>
+            <br>
+            <label id="sexo">Sexo</label>
+            <br>
+            <label id="sexo">
+                <input type="radio" name="sexo" id="sexo" value="M">
+                Masculino
+            </label>
+            <br>
+            <label id="sexo">
+                <input type="radio" name="sexo" id="sexo" value="F">
+                Femenino
+            </label>
+            <br>
+            <label id="sexo">
+                <input type="radio" name="sexo" id="sexo" value="O">
+                Otro
+            </label>
+            <br>
+            <label for="fecha_nacimiento">Fecha de Nacimiento</label>
+            <input type="date" name="fecha_nacimiento" id="fecha_nacimiento">
+            <br>
+            <label>Estudios Realizados</label>
+            <br>
+            <label for="primaria">
+                <input type="checkbox" name="primaria" id="primaria"> Primaria
+            </label>
+            <br>
+            <label for="secundaria">
+                <input type="checkbox" name="secundaria" id="secundaria"> Secundaria
+            </label>
+            <br>
+            <label for="preparatoria">
+                <input type="checkbox" name="preparatoria" id="preparatoria"> Preparatoria
+            </label>
+            <br>
+            <br>
+            <label for="municipio">Municipio</label>
+            <label for="municipio">
+                <select name="municipio" id="municipio">
+                    <option >Seleccione una opción</option>
+                    <option value="Aquismón">Aquismón</option>
+                    <option value="Tancanhuitz">Tancanhuitz</option>
+                    <option value="San Antonio">San Antonio</option>
+                    <option value="Tampamolón">Tampamolón</option>
+                    <option value="Coxcatlán">Coxcatlán</option>
+                    <option value="Tanlajás">Tanlajás</option>
+                </select>
+            </label>
+            <br>
+            <br>
+            <label for="email">Correo Electrónico</label>
+            <input type="email" name="email" id="email">
+            <br>
+            <br>
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password">
+            <br>
+            <br>
+            <label for="cv">Curriculum Vitae</label>
+            <input type="file" name="cv" id="cv">
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+
+</html>

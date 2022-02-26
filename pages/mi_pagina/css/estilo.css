@@ -1,0 +1,225 @@
+/* Fuente Poppins de Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Resetear el estilo que aplica el navegador*/
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilo para el cuerpo del documento html */
+body{
+    background-color: #e5e5e5;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos a la etiqueta <header> que contiene la clase encabezado*/
+.encabezado{
+    min-height: 100vh;
+    background-color: #14213d;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.saber_mas{
+    margin: 10px;
+    color: #e5e5e5;
+    padding: 10px;
+    border-style: solid;
+    border-color: #fca311;
+}
+
+/* Estilos a la etiqueta <nav> que contiene la clase barra_navegacion*/
+.barra_navegacion {
+    background-color: black;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: 0;
+}
+
+/* Estilos a la etiqueta <a> que contiene la clase encabezado*/
+.logo{
+    width: 150px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+/* Estilo al pasar el cursor en el logo*/
+.logo:hover{
+    color: #fca311;
+}
+
+/* Estilo a la lista de enlaces*/
+.enlaces {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    flex-direction: row;
+}
+
+/* Estilo aplicado a los enlaces de navegacion*/
+.enlaces_navegacion {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilo aplicado a los enlaces de navegacion cuando pasamos el cursor*/
+.enlaces_navegacion:hover{
+    background-color: #fca311;
+    color: white;
+}
+
+/* Estilo aplicado a la etiqueta <section> con el id="acerca_de_mi" */
+#acerca_de_mi{
+    min-height: 100vh;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    overflow: hidden;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo aplicado a la etiqueta <article> */
+.informacion{
+    padding: 50px 30px 20px 30px;
+    width: 75%;
+}
+
+.informacion > h1, .trabajos > h1, .escuelas > h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.fotos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Estilo aplicado a la etiqueta <aside> */
+.menulateral{
+    padding: 70px 30px 20px 30px;
+    width: 25%;
+    background-color: whitesmoke;
+}
+
+.lista_de_enlaces > ul {
+    display: flex;
+    padding: 0px;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.lista_de_enlaces > ul > li >a {
+    color: #14213d;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Estilo aplicado a la etiqueta <section> con el id="experiencia" */
+#experiencia{
+    min-height: 100vh;
+    margin: 20px;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.trabajos{
+    padding: 50px 30px 20px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.informacion_trabajo{
+    width: 50%;
+    border-style: solid;
+    border-color: #14213d;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+/* Estilo aplicado a la etiqueta <section> con el id="estudios" */
+#estudios{
+    min-height: 100vh;
+    margin: 20px;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.escuelas{
+    padding: 50px 30px 20px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pie_de_pagina{
+    padding: 25px;
+    background-color: #fca311;
+    color:white
+}
+
+/* Formulario de Contacto*/
+.formulario{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#correo_electronico{
+    padding: 5px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #14213d;
+}
+
+
+/* Responsividad */
+
+@media (max-width: 800px) {
+    .barra_navegacion{
+        flex-direction: column;
+    }
+    .enlaces{
+        flex-direction: column;
+    }
+    .responsivo{
+        display: none;
+    }
+
+    #acerca_de_mi {
+      flex-direction: column;
+    }
+    .informacion{
+        width: 100%;
+        order: 1;
+    }
+    .menulateral{
+        order: 2;
+        width: 100%;
+    }
+    .fotos {
+        flex-direction: column;
+    }
+}

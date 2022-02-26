@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header class="encabezado">
+        <img class="perfil" src="img/profile.png" alt="imagen de perfil" width="200px">
+        <h1>Contacto </h1>
+    </header>
+    <section class="formulario">
+        <form id="form_contacto" action="servidor/contacto.php" method="post">
+            <div>
+                <label for="correo_electronico">Correo Electrónico</label>
+                <input type="email" id="correo_electronico" name="correo_electronico">
+            </div>
+            <div>
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+    <script>
+        let formulario = document.getElementById(form_contacto);
+        
+    </script>
+</body>
+</html>

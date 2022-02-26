@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formateo de Texto Avanzado</title>
+</head>
+
+<body>
+    <!--Listas de Descripciones-->
+    <dl>
+        <dt>soliloquio</dt>
+        <dd>En las obras dramáticas, corresponde a cuando un personaje se habla a sí mismo para representar sus
+            pensamientos o sentimientos internos y, en el proceso, transmitirlos a la audiencia (pero no a otros
+            personajes).</dd>
+        <dt>monólogo</dt>
+        <dd>En las obras dramáticas, corresponde a cuando un personaje habla de sus pensamientos en voz alta para
+            compartirlos con el público y cualquier otro personaje presente.</dd>
+        <dt>aparte</dt>
+        <dd>En las obras dramáticas, corresponde a cuando un personaje comparte un comentario solo con la audiencia para
+            dar efecto cómico o dramático. Suele ser un sentimiento, un pensamiento o información adicional.</dd>
+    </dl>
+
+    <dl>
+        <dt>aparte</dt>
+        <dd>En las obras dramáticas, corresponde a cuando un personaje comparte un comentario solo con la audiencia para
+            dar efecto cómico o dramático. Suele ser un sentimiento, un pensamiento o información adicional.</dd>
+        <dd>Si la obra es impresa, es una sección de contenido que se relaciona con el tema, pero no encaja directamente
+            en el flujo principal de contenido, de modo que se presenta por separado (a menudo en una caja de texto en
+            el margen).</dd>
+    </dl>
+
+    <!--Citas-->
+    <p>De acuerdo con <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/blockquote">
+            <cite>página de citas en bloque independiente de MDN</cite></a>:
+    </p>
+
+    <blockquote cite="https://developer.mozilla.org/es/docs/Web/HTML/Element/blockquote">
+        <p>El <strong>elemento HTML <code>&lt;blockquote&gt;</code></strong> (o <em>elemento HTML de cita
+                en bloque independiente</em>) indica que el texto al que delimita es una cita ampliada.</p>
+    </blockquote>
+
+    <p>El elemento de cita — <code>&lt;q&gt;</code> — se <q
+            cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">utiliza en
+            citas breves que no requieren saltos de párrafo.</q> -- <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">
+            <cite>página q de MDN</cite></a>.</p>
+
+
+    <!--Abreviaturas-->
+    <p>Usamos <abbr title="Lenguaje de marcado de hipertexto">HTML</abbr> para estructurar nuestros documentos web.</p>
+
+    <p>Creo que el <abbr title="Reverendo"">Rev.</abbr> Green lo hizo en la cocina con la motosierra.</p>
+
+    <!--Información de contacto-->
+    <address>
+        <p>
+          Chris Mills<br>
+          Manchester<br>
+          The Grim North<br>
+          Reino Unido
+        </p>
+      
+        <ul>
+          <li>Tel: 01234 567 890</li>
+          <li>Email: me@grim-north.co.uk</li>
+        </ul>
+      </address>
+
+      <address>
+        <p>Página escrita por <a href=" ../authors/chris-mills/">Chris Mills</a>.</p>
+    </address>
+
+    <!--Superíndice y Subíndice-->
+    <p>Nací el 25<sup>th</sup> de mayo de 2001.</p>
+    <p>La fórmula química de la cafeína es C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>.</p>
+    <p>If x<sup>2</sup> es 9, x debe ser igual 3 o -3.</p>
+
+    <!--Representación de Código Informático-->
+    <pre><code>var para = document.querySelector('p');
+
+        para.onclick = function() {
+          alert('¡Guau!, ¡deja de apretar!');
+        }</code></pre>
+
+    <p>No debes utilizar elementos de presentación como <code>&lt;font&gt;</code> y <code>&lt;center&gt;</code>.</p>
+
+    <p>En el ejemplo de JavaScript anterior, <var>para</var> representa un elemento de párrafo.</p>
+
+
+    <p>Selecciona todo el texto con <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd>.</p>
+
+    <pre>$ <kbd>ping mozilla.org</kbd>
+        <samp>PING mozilla.org (63.245.215.20): 56 bytes de datos
+        64 bytes de 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp></pre>
+    
+    <!--Marcar horas y fechas-->
+
+    <!-- Fecha simple estándar -->
+    <time datetime="2016-01-20">20 Enero 2016</time> <br>
+    <!-- Solo año y mes -->
+    <time datetime="2016-01">Enero 2016</time> <br>
+    <!-- Solo mes y día -->
+    <time datetime="01-20">20 Enero 2016</time> <br>
+    <!-- Solo tiempo, horas y minutos -->
+    <time datetime="19:30">19:30</time> <br>
+    <!-- ¡También puedes hacer segundos y milisegundos! -->
+    <time datetime="19:30:01.856">19:30:01.856</time> <br>
+    <!-- Fecha y hora -->
+    <time datetime="2016-01-20T19:30">7.30pm, 20 Enero 2016</time> <br>
+    <!-- Fecha y hora con desplazamiento de zona horaria -->
+    <time datetime="2016-01-20T19:30+01:00">7.30pm, 20 Enero 2016 es 8.30pm en Francia</time> <br>
+    <!-- Llamar a un número de semana específico -->
+    <time datetime="2016-W04">La cuarta semana de 2016</time>
+
+</body>
+
+</html>
