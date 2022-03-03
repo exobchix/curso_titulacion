@@ -1,13 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
 </head>
+
 <body>
-    <div class="aplicacion"></div>
-    <script src="fundamentos/variables.js"></script>
+    <div id="aplicacion"></div>
+    <div id="demo"></div>
+    <button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+    <button id="btn">Alerta</button>
+    <br>
+    <p>Escriba un número del 1 al 10</p>
+    <br>
+    <input type="number" id="numb">
+    <button onclick="validarInput()">Validar</button>
+    <div id="mensaje"></div>
+
+    <div style="margin-top: 10px;">
+        <form name="miFormulario" action="/action_page.php" onsubmit="return validarFormulario()" method="post">
+            Nombre: <input type="text" name="nombre">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script src="fundamentos/eventos.js"></script>
+    <script src="dom/formularios.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script>
+        var constraints = {
+            from: {
+                email: true
+            }
+        };
+        constraints = {
+            from: {
+                email: {
+                    message: "doesn't look like a valid email"
+                }
+            }
+        };
+
+        let emaiValidation = validate({ from: "first.last@examplecom" }, constraints);
+
+
+        console.log(emaiValidation);
+
+    </script>
 </body>
+
 </html>
