@@ -200,7 +200,7 @@
                 ?>
                 <tr>
                     <td colspan = "5">
-                        <?php echo "0 results";?>
+                        <?php echo "0 resultados";?>
                     </td>
                 </tr>
                 <?php

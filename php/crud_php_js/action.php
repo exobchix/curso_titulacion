@@ -23,11 +23,13 @@
   // Manejar la petición de Ajax para obtener todos los usuarios
   if (isset($_GET['read'])) {
     $users = $user->read();
+    $index = 0;
     $output = '';
     if ($users) {
       foreach ($users as $row) {
+        $index++;
         $output .= '<tr>
-                      <td>' . $row['id'] . '</td>
+                      <td>' . $index . '</td>
                       <td>' . $row['first_name'] . '</td>
                       <td>' . $row['last_name'] . '</td>
                       <td>' . $row['email'] . '</td>
