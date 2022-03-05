@@ -7,5 +7,7 @@
 
 #include 'fundamentos/tipos_datos.php';
 
-include 'fundamentos/strings.php';
+#include 'fundamentos/strings.php';
+
+
 ?>
